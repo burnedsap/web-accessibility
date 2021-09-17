@@ -1,0 +1,15 @@
+# Permalinks
+permalink: pretty
+
+title: Web Accessibility
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  testbed and documentation.
+baseurl: "/web-accessibility" # the subpath of your site, e.g. /blog
+url: "https://burnedsap.github.io/web-accessibility"
+twitter_username: burnedsap
+github_username:  burnedsap
+
+# Build settings
+plugins:
+  - jekyll-feed
