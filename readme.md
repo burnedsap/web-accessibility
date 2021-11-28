@@ -65,7 +65,7 @@ After writing out the basic structure of the webpage, head over to the style.css
  
 To test your website, use ChromeVox, Voiceover, or the appropriate screen reader technology for your device to experience your web page in order to spot any issues, or improve the experience to make it just as smooth for able-bodied users
 
-#### Things to look out for!
+### Things to look out for!
 
 1. The intended order and hierarchy of your webpage should be the same visually as well as through a screen-reader
 2. Is it easy for users to browse through the content and be aware of the overall structure of your webpage so that they may get to the content they want to quickly? Enable the Rotor using VO Button+U to view the overall structure of your website
@@ -75,7 +75,7 @@ To test your website, use ChromeVox, Voiceover, or the appropriate screen reader
 <a href="#mysketch" class="skip-link">Skip to my p5js sketch</a>
 <section id="mysketch">
 
-//your sketch comes here
+//your sketch iframe comes here
 
 </section>
 ```
@@ -85,16 +85,25 @@ Read more about this here: [WebAIM Skip Navigation Links](https://webaim.org/tec
 4. When using hamburger menus or other elements which aren't immediately visible on-screen, you might find that the focus ring might disappear onto those hidden elements, which could be confusing when using a screen-reader. You can fix this by setting the visibility:none in the CSS when it is not visible, so that the focus ring doesn't select it.
  
 
+### Embedding Content
+
 When adding images, videos, p5js sketches, and other visual content to your webpage, think about the experience from the perspective of someone using a screen reader to viewing the page. What would they see? What is the best possible solution for them? Images have alt text, videos have audio+captions, and iframes (which holds p5js sketches, embeds and more) can also be assigned an alt text. p5js also has a describe function which dynamically changes the alt text based on whats happening on the canvas. Although these options are tried and tested, and designed for accessibility, always think of the alternate methods if they provide better solutions.
+
+Sometime, it might just be better to link to the content to an external site rather than embedding it within your webpage. 
 
 The goal is not to complete a check list, rather it's to ensure that the experience of viewing a web page is not just as accessible (the minimum requirement) but more importantly, enjoyable for everyone.
 
- Think of the colours used on your web page–would people with different kinds of colour vision deficiency be able to access visual content on screen? Are the fonts used easily readable and legible? It might not be easy at first, but there's plenty of tools available to help find the blind spots in your design and development. Safari, Firefox, and Chrome have in-built accessibility audits/tools to help you find gaps. They are never going to be 100% accurate, and will definitely not give you qualitative feedback on the experience–but they will help you design better. Testing is the only way to find all the issues. 
+### Design
+
+ Think of the colours used on your web page–would people with different kinds of colour vision deficiency be able to access visual content on screen? Are the fonts used easily readable and legible? In many ways, the process of designing for accessibility is no different from communication design. As far as possible, it's good to ensure that your design is accessible to more people.
+
+ The typefaces used on the website are Open-Dyslexic and Arial, both of are dyslexic friendly and help with readability. 
+ 
+ It might not be easy at first, but there's plenty of tools available to help find the blind spots in your design and development. Safari, Firefox, and Chrome have in-built accessibility audits/tools to help you find gaps. They are never going to be 100% accurate, and will definitely not give you qualitative feedback on the experience–but they will help you design better. Testing is the only way to find all the issues. 
 
 This is no different from designing and creating responsive websites. The effort that is put into making sure websites look consistent and function as intended across screen sizes is no more important than make sure it's accessible to everyone.
 
-#### Good design is accessible.
-
+### Good design is accessible.
 
 
 Bruce Lawson, co-editor ofthe HTML 5.3 spec
