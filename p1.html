@@ -1,116 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Your Name | Code 2 Portfolio</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <title>Critical Computation Portfolio</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <!-- navigation menu -->
-    <div class="nav">
-      <h1>Your Name</h1>
-      <ul>
-        <li>Project <a href="p1.html">#1</a></li>
-        <li>Project <a href="p2.html">#2</a></li>
-        <li>Project <a href="p3.html">#3</a></li>
-        <li>Project <a href="p4.html">#4</a></li>
-        <li>Project <a href="p5.html">#5</a></li>
-        <li>Project <a href="p6.html">#6</a></li>
-        <li>Project <a href="p7.html">#7</a></li>
-        <li>Project <a href="p8.html">#8</a></li>
-        <li>Project <a href="p9.html">#9</a></li>
-        <li>Project <a href="p10.html">#10</a></li>
-      </ul>
-    </div>
+  <!-- import the webpage's javascript file -->
+  <script src="/script.js" defer></script>
 
-    <!-- main content -->
-    <div class="content">
-      <!-- 1. give your project  a titile -->
+</head>
 
-      <h1>
-        Project #1 Title
-      </h1>
+<body>
 
-      <!-- 2. embed your p5 sketch -->
+  <header>
+    <h1>
+      <a href="index.html">Critical Computation Portfolio</a>
+    </h1>
+  </header>
+  <nav>
+    <p>
+      Projects created in Fall 2020
+    </p>
+    <ul>
+      <li>
+        <a href="p1.html"> Coffee Cup Generator
+        </a>
+      </li>
+      <li>
+        <a href="p2.html"> Sample Project 1
+        </a>
+      </li>
+      <li>
+        <a href="p3.html"> Sample Project 2
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <h2>
+      Coffee Cup Generator
+    </h2>
 
-      <div class="fullwidth">
-        <!-- below width and height refers to the dimensions of your sketch-->
+    <h3>
+      Introduction
+    </h3>
+    <p>
+      For this assignment I chose a coffee cup, although any given object could probably lead to exciting explorations
+      using this process. The design of coffee cups and mugs have stagnated as of late, which is a shame as there’s so
+      much potential, given that every mug can be uniquely designed to hold a particular kind of liquid, and be a
+      perfect fit for every unique hand. My hands are slightly larger than normal which makes it tricky to hold my cup,
+      and my french press holds just that little bit more coffee than my cup, which means I can’t get a perfect pour!
+      Although not the biggest problem in the world, the same issue becomes a lot more problematic when it comes to shoe
+      sizes or standardised clothing standards, which can be quite exclusionary.  
+    </p> 
 
-        <iframe
-          width="400px"
-          height="400px"
-          src="https://editor.p5js.org/katherineKKM/embed/OINPXY4y6"
-        ></iframe>
-      </div>
+    <iframe width="400px" height="450px" alt="a p5js sketch showing the final output created, a coffee cup generator" src="https://editor.p5js.org/burnedsap/full/EqYBEosH3"></iframe>
+    <p>View the sketch on the p5js editor <a href="https://editor.p5js.org/burnedsap/full/EqYBEosH3"
+        target="_blank">here</a>.</p>
 
-      <!-- 3. write a short description to describe what the work is about -->
-      <h1>
-        Description
-      </h1>
+    <h3>
+      Process
+    </h3>
+    <p>
+      With the aim of generating new cups forms, I looked to the craft of wheel pottery for inspiration. Pottery on the
+      wheel affords for new kinds of organic forms with every creation. The same amount of clay can be used to create
+      cups with different forms yet with the same capacity. To make each cup unique, the shape and form of the cup would
+      be defined by the volume it needed to contain. I also wanted to make the sketch functional, so I added a layer of
+      coffee preparation over it. The sketch would not only <mark>design new forms of cups, but also provide the amount
+        of
+        coffee needed for various kinds of coffee preparation</mark>.
+    </p>
+    <p>
+      I started off with some drawings, laying out the various elements of the sketch, and making a to-do list. The
+      coffee preparation styles were researched, and the ratio of the coffee to other parts were mapped out on the
+      vertical axis, and the volume of the coffee itself on the horizontal axis. I connected the values to the mouseX
+      and mouseY, so by moving the mouse around, I could see how many grams of coffee I would need to prepare a certain
+      amount of coffee with a specific preparation style.
+    </p>
+    <figure>
+      <img src="images/coffee-generator-notes-1.png"
+        alt="rough sketches detailing out strange coffee mug shapes that I want to create, divided into simple shapes such as rectangles, and circles.">
+      <figcaption>Rough sketches detailing out shapes I want to create</figcaption>
+    </figure>
+    <figure>
+      <img src="images/coffee-generator-notes-2.png"
+        alt="mockup of the interface which consists of a X and Y cartesian grid, with the generated coffee mug in the center">
+      <figcaption>Mockup of the interface</figcaption>
+    </figure>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+    <p>
+      I realised that perhaps it wasn’t necessary to create something which is volumetrically accurate, and something
+      which gives a visual impression of the same is good enough. Working with <code>curveVertex</code> driven forms
+      created uneven
+      shapes, and so I switched to using shapes on Elena’s advice. I used surface area instead of volume to create the
+      forms, and so even if the end result wasn’t accurate, it was still relatively proportional. After some
+      experimentation with shapes, I realised that I might be better off creating shapes using vertex, to have finer
+      control over the forms of the shapes, and a thick stroke to make the shapes look organic. I visually ‘cheated’ by
+      making the length of the radius on the rim of the cup the same as the base of the cup, to create predictable forms
+      which could clearly still be identified as a cup or a mug.
+    </p>
 
-      <!-- 4. reflection -->
-      <h1>
-        Design Process
-      </h1>
+    <p>This was the final algorithm which helped me calculate the shape of the cups.</p>
+    <code id="block">
+      volume = round(map(mouseX, 0, width, 20, 1800));
+      let tw = textWidth(volume + 'ml') / 2;
+    
+      //Calculate total volume of drink
+      volume = round(map(mouseX, 0, width, 20, 1800));
+      let tw = textWidth(volume + 'ml') / 2;
+    </code>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
 
-      <div class="fullwidth">
-        <img
-          src="https://cdn.glitch.com/87836090-8683-448f-a8fb-3af0c0f82bac%2Fworksheets-03.png?v=1598505804708"
-        />
-      </div>
+    <h3>
+      Learnings
+    </h3>
+    <p>
+      When I first thought of creating generative coffee cups, I had envisioned making wheel pottery esq complex forms,
+      which would adapt to the volume of the coffee. Although I wasn’t able to create something as complicated, I’m
+      happier with the forms that are currently being generated. The forms are simpler, but they look like they could be
+      made, and are comfortable to hold as well. This is especially true for the smaller forms, as the complications
+      lead to very interesting forms, of which some look particularly appealing to drink out of. The different kinds of
+      forms also question the way we currently hold our cups. I’ve never found handles to be easy to hold on to, with
+      mugs always being easier and more intuitive to grasp. Some mugs are to be held from the bottom, and some from the
+      top, which could be a function of the temperature of the liquid it holds. It’s also interesting to note how the
+      size of the rim affects which sort of liquids the cup is used for. Cups with smaller rims are preferred for
+      liquids which need to be consumed slowly, in sips, whereas cups with wider rims are better for liquids which can
+      be consumed quickly, such as water, or to be used for pouring.
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
+    </p>
 
-      <!-- 4. reflection -->
-      <h1>
-        Reflection
-      </h1>
-      
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
-  </body>
+    <img
+      src="images/coffee-generator-pics-1.png"
+      alt="a screenshot from the sketch which shows a small vee shaped cup of 265 milliliters of espress with 133 grams of coffee">
+      <img
+      src="images/coffee-generator-pics-2.png"
+      alt="a screenshot from the sketch which shows a large mug of 505 milliliters of americano with 126 grams of coffee">
+
+  </main>
+  <footer>
+    <h4>
+      Contact Me
+    </h4>
+    <address>
+      <a href="#">email@mail.com</a>
+    </address>
+  </footer>
+</body>
+
 </html>

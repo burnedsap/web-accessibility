@@ -1,3 +1,10 @@
+# Accessible Portfolio Website
+
+This is a quick web template to help you get started with making your portfolio website more accessible. 
+
+
+## Semantic HTML
+
 Create a tree digram for the webpage before you start coding it. This pseudo-code will help you structure your content before you start writing your code. As they say, measure twice, cut once. Use as many semantic HTML elements as you can. This will not only help you structure your website better, but also make it easily accessible to screen-readers and other accessibility technologies. See all the relevant semantic tags here: [MDN HTML Elements Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) You'll be surprised at how many tags exist-so many useful ones!
 
 
@@ -108,3 +115,8 @@ This is no different from designing and creating responsive websites. The effort
 
 Bruce Lawson, co-editor ofthe HTML 5.3 spec
 > "built-in beats bolt-on. Bigly."
+
+
+## Links
+
+//insert links here

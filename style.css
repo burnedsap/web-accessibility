@@ -32,6 +32,13 @@ h1 {
   font-size: 24pt;
 }
 
+h1 a {
+  font-family: OpenDyslexic;
+  color: #373fff;
+  font-size: 24pt;
+  text-decoration: none;
+}
+
 h2 {
   font-family: OpenDyslexic;
   font-size: 18pt;
@@ -150,7 +157,6 @@ nav a:visited {
   color: black;
   text-decoration: underline;
 }
-
 
 
 
