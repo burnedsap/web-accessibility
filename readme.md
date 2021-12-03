@@ -1,9 +1,15 @@
 # Accessible Portfolio Website
 
-This is a quick web template to help you get started with making your portfolio website more accessible. 
+This is a quick web template to help you get started with making your portfolio website more accessible. Although this particular template is primarily designed for for those looking to share creative coding work, it can be repurposed for any sort of content, including writing, photography, design and much more. 
+
+## Getting Started
+
+To get started on using the template, download the Github repository by clicking on Code -> Download ZIP. Edit the template as you see fit and upload it to your web server. 
+
+To understand the design principles behind this template and how to get started on making your website more accessible, read the rest of the readme below. This short guide explains how to get started on developing and designing accessible websites from scratch. This is simply a brief introduction and to learn more, see the links right at the end which will lead you to further resources.
 
 
-## Semantic HTML
+### Semantic HTML
 
 Create a tree digram for the webpage before you start coding it. This pseudo-code will help you structure your content before you start writing your code. As they say, measure twice, cut once. Use as many semantic HTML elements as you can. This will not only help you structure your website better, but also make it easily accessible to screen-readers and other accessibility technologies. See all the relevant semantic tags here: [MDN HTML Elements Reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) You'll be surprised at how many tags exist-so many useful ones!
 
@@ -119,4 +125,10 @@ Bruce Lawson, co-editor ofthe HTML 5.3 spec
 
 ## Links
 
-//insert links here
+[A11y & Me](https://a11y.me)
+[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+
+### Web Standards
+
+[WebAIM](https://webaim.org)
+[W3C WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
