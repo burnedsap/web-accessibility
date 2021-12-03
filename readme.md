@@ -126,9 +126,11 @@ Bruce Lawson, co-editor ofthe HTML 5.3 spec
 ## Links
 
 [A11y & Me](https://a11y.me)
+
 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
 
 ### Web Standards
 
 [WebAIM](https://webaim.org)
+
 [W3C WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/)
