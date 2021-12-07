@@ -5,66 +5,92 @@
 }
 
 html {
-  width: 100%;
+  width: 100vw;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 2em;
-  width: 100%;
-  /* height: 100%; */
+  padding: 5vw;
+  background-color:cornsilk;
 }
 
 header{
   width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 2vw;
+}
+
+nav {
+  width: 25vw;
+  height: 100%;
+  float: left;
+  font-size: 14pt;
+  line-height: 27px;
+  cursor: pointer;
+}
+nav a,
+nav a:visited {
+  color: black;
+  text-decoration: underline;
 }
 
 main {
-  padding: 2%;
-  width: 50%;
+  padding: 0;
+  margin: 0;
+  width: 50vw;
   display: inline-block;
-  float: left;
+}
+
+h1, h1 a, h2, h3, h4 {
+  font-family: OpenDyslexic;
+  color: darkslategrey;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-family: OpenDyslexic;
-  color: #373fff;
   font-size: 24pt;
+  padding-bottom: 24pt;
 }
 
 h1 a {
-  font-family: OpenDyslexic;
-  color: #373fff;
   font-size: 24pt;
   text-decoration: none;
+  padding-bottom: 24pt;
 }
 
 h2 {
-  font-family: OpenDyslexic;
-  font-size: 18pt;
+  font-size: 20pt;
+  padding-bottom: 20pt;
 }
 
 h3 {
-  font-family: OpenDyslexic;
-  font-size: 16pt;
+  font-size: 18pt;
+  padding-bottom: 18pt;
 }
 h4 {
-  font-family: OpenDyslexic;
-  font-size: 14pt;
+  font-size: 16pt;
+  padding-bottom: 16pt;
 }
 
 p {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   line-height: 1.7;
+  padding-bottom: 14pt;
 }
 a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
-  padding: 2%;
+  bottom:0;
+  left:0;
   width:100%;
+  height: 90px;
   display: inline-block;
 }
 
@@ -80,7 +106,7 @@ ul {
 }
 
 li {
-  font-size: 12pt;
+  font-size: 14pt;
   list-style-type: none;
   padding-bottom: 1em;
 }
@@ -108,10 +134,7 @@ iframe {
   margin: 0;
   padding: 0;
   border: none;
-  width: 100%;
-  /*   height: 400px; */
-  display: inline-block;
-  float: left;
+  display: block;
   margin-bottom: 2%;
 }
 
@@ -139,27 +162,10 @@ code {
     width: 100%;
     background: lightgray;
     padding: 1px;
+    margin-bottom: 2vw;
     border-radius: 3px;
     white-space: pre-wrap;
 }
-
-nav {
-  padding: 2%;
-  width: 26%;
-  height: 100%;
-  display: inline-block;
-  float: left;
-  font-size: 18px;
-  line-height: 27px;
-  cursor: pointer;
-}
-nav a,
-nav a:visited {
-  color: black;
-  text-decoration: underline;
-}
-
-
 
 @media only screen and (max-width: 600px) {
   body {
