@@ -68,12 +68,11 @@
       coffee preparation over it. The sketch would not only <mark>design new forms of cups, but also provide the amount
         of
         coffee needed for various kinds of coffee preparation</mark>.
-    </p>
-    <p>
+    <br/><br />
       I started off with some drawings, laying out the various elements of the sketch, and making a to-do list. The
       coffee preparation styles were researched, and the ratio of the coffee to other parts were mapped out on the
-      vertical axis, and the volume of the coffee itself on the horizontal axis. I connected the values to the mouseX
-      and mouseY, so by moving the mouse around, I could see how many grams of coffee I would need to prepare a certain
+      vertical axis, and the volume of the coffee itself on the horizontal axis. I connected the values to the <code>mouseX</code>
+      and <code>mouseY</code>, so by moving the mouse around, I could see how many grams of coffee I would need to prepare a certain
       amount of coffee with a specific preparation style.
     </p>
     <figure>
@@ -93,13 +92,13 @@
       created uneven
       shapes, and so I switched to using shapes on Elena’s advice. I used surface area instead of volume to create the
       forms, and so even if the end result wasn’t accurate, it was still relatively proportional. After some
-      experimentation with shapes, I realised that I might be better off creating shapes using vertex, to have finer
+      experimentation with shapes, I realised that I might be better off creating shapes using <code>vertex</code>, to have finer
       control over the forms of the shapes, and a thick stroke to make the shapes look organic. I visually ‘cheated’ by
       making the length of the radius on the rim of the cup the same as the base of the cup, to create predictable forms
       which could clearly still be identified as a cup or a mug.
     </p>
 
-    <p>This was the final algorithm which helped me calculate the shape of the cups.</p>
+    <p>This was the final algorithm which helped me calculate the shape of the cups:</p>
     <code id="block">
       volume = round(map(mouseX, 0, width, 20, 1800));
       let tw = textWidth(volume + 'ml') / 2;
