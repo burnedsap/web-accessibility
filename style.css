@@ -49,11 +49,15 @@ main {
   /* margin-bottom: -20px; */
 }
 
-h1, h1 a, h2, h3, h4 {
+h1, h1 a, h2, h3, h4, h5, h6 {
   font-family: OpenDyslexic;
   color: darkslategrey;
   margin: 0;
   padding: 0;
+}
+
+nav h5 {
+  margin-bottom: 2rem;
 }
 
 h1 {
